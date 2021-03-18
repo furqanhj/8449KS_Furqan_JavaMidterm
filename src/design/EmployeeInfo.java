@@ -12,6 +12,7 @@ public class EmployeeInfo {
 
     Important: YOU MUST USE:
         - OOP (Abstraction, Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
+        - COMPOSITION
         - Use all kind of keywords (super, this, static, final, etc)
         - Implement nested class below (DateConversion)
         - Use Exception Handling
