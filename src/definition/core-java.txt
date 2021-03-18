@@ -202,61 +202,100 @@ Answer: Serialization is a mechanism of converting the state of an object into b
         the process, which means reconverting the serialized byte stream to an object again.
 
 Explain the difference between While and Do..While loops?
-Answer:
+Answer: In a while loop, Java first checks the condition. If the condition is true, then only will the loop iterate, otherwise
+        it will end. In a Do-While loop, the code will be executed at least once before the condition is checked.
 
 What is Enum?
-Answer:
+Answer: Enum is a special class in which all the variables declared are constants ie they are final by default. To declare
+        a class as enum, we use the "enum" keyword instead of the "class" or "interface" keywords. Also, all the variables
+        declared in an enum are in SNAKE_CASE.
 
 What is Iterator?
-Answer:
+Answer: Iterator is an Object of an Interface in Java. It is used to iterate or loop through collections, like ArrayList
+        and HashSets.
 
 Which one will take more memory: an int or Integer? Why?
-Answer:
+Answer: I would say that Integer would take up more memory because Integer is an object which is created of an Integer
+        wrapper class. So when an object is created, it is created in the heap memory space and the allocation for an
+        object in heap memory is always more than a primitive data type stored in the stack.
 
 Why are Strings considered to be immutable in Java?
-Answer:
+Answer: Strings are immutable because the String class in Java library is declared as final, which means that String is a
+        constant. So whatever is the initial value given to a String variable that would be final.
 
 What is constructor chaining in Java?
-Answer:
+Answer: The process of invoking a sequence of constructors upon initialization of a class object, is called Constructor
+        Chaining. It is useful when we want to invoke multiple constructors, one after the other, by initializing only
+        one instance. Also, it becomes useful when dealing with Inheritance.
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer: Serial GC uses a single thread for garbage collection. It is best suited for simple command line programs. Whereas,
+        Parallel GC, uses multiple threads for garbage collection. Parallel GC are also called as throughput collectors.
 
 What does JIT stands for?
-Answer:
+Answer: JIT stands for Java In-Time Compiler. It is a part of JVM that optimizes the performance of an application. JIT
+        Compilation is also known as Dynamic Compilation.
 
 Explain the process of Java garbage collection?
-Answer:
+Answer: Java garbage collection is an automatic process in which when a java program is created, java automatically
+        does memory management. Whenever a java program is compiled, objects are created and stored in heap, which is a
+        memory area dedicated to the program. When the objects are unused or no longer in use, the GC finds these unused
+        objects and deletes them from heap to free up memory space.
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer: No. A garbage collection process cannot be guaranteed because even if a programmer explicitly defines the GC codes,
+        there are chances those codes wont run or execute upon the execution of the program as GC would assume the objects
+        as still usable by the program.
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer: Stack and Heap are two memory spaces in a System where different data types and methods are stored. All Primitive
+        data types are stored on Stack whereas Non-Primitive data types or the objects that are created, are stored on
+        Heap. Stacks are a linear storage structure which follows the LIFO removal concept, whereas Heaps are hierarchical
+        storage structures, where an object is given a random space in memory. Stacks are much faster as compared to Heaps.
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer: Reflection is an API and a process in java which is used to analyze and modify the capabilities of a class and its
+        members (like constructors and methods), at runtime. One advantage of reflection API in java is that it can access
+        private members of a class as well. The "java.lang.reflect" package provides many classes to implement reflection.
+        "java.Methods" of the "java.lang.Class" class, is used to gather the complete metadata of a particular class.
 
 What is multithreading in Java?
-Answer:
+Answer: A thread in Java, is the path followed when executing a program in java. All java programs have at least one thread
+        known as the main thread, which is created by the JVM, at the program's start, when the main() method is invoked
+        with the main thread. so, Multithreading, is a process of executing two or more threads simultaneously. Hence, it
+        is also known as Concurrency. Multithreaded application execute two or more threads run concurrently, ie. each
+        thread runs parallel to each other.
 
 What is synchronization in Java?
-Answer:
+Answer: Synchronization in java, is the the capability to control the access of multiple threads to any shared resources.
+        Java synchronization is a better option when we want to allow only one thread to access the shared resource. We
+        do this with the help of a synchronized block which is synchronized on some object. All synchronized blocks,
+        synchronized on the same object, can only have one thread executing inside of them at a time. All other threads
+        attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block.
 
 What is a Framework?
-Answer:
+Answer: Java framework is the body or platform of pre-written codes, used by Java developers, to develop java applications.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer: A testing framework is a set of guidelines or rules used for creating and designing test cases. Some of the
+        testing frameworks available in java are as follows: JBehave, JUnit, TestNG, Serenity, Selenide, Gauge, Spock,
+        JWebUnit etc.
 
 What are jUnit and testNG?
-Answer:
+Answer: JUnit and TestNG are testing frameworks available in Java to unit test an application or program. JUnit is an
+        open-source framework used to trigger and write tests. TestNG is a Java-based framework that is an upgraded option
+        for running test cases. JUnit does not support to run parallel tests, whereas TestNG can run parallel tests.
 
 What are the dependencies for this project?
-Answer:
+Answer: gson, jackson, json, mongo, mysql and testng are the dependencies used for this project.
 
 What is dependency injection in Java?
-Answer:
+Answer: Dependency Injection (DI) is the concept in which objects get other required objects from outside or an external
+        source. DI can be implemented in any programming language. A java class has a dependency on another class, if it
+        uses an instance of that class.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer: Static Binding uses Type Information for binding while Dynamic Binding uses Objects to resolve binding. Overloaded
+        methods are resolved  using static binding while over-ridden methods are resolved using Dynamic binding, ie. at
+        run-time. Static binding happens when all information needed to call a function is available at the compile-time.
+        Dynamic binding happens when all information needed for a function call cannot be determined at compile time.
