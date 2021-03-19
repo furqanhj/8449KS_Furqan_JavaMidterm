@@ -1,37 +1,64 @@
 ***ANSWER ALL QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: Data Structures are required to store and organize large amounts of data, so that they can be used efficiently.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: Adding/ Inserting, Deleting/ Removing, Updating, Searching, Iterating, Merging, Appending, Sorting are some of
+        the various operations that can be performed on different data structures.
 
 When would we use data structures in the real world?
-Answer:
+Answer: A few examples of Data Structures in real world examples are like, buying a concert ticket or purchasing a limited
+        quantity item from eBay, where a Queue data structure would be implemented using the FIFO concept. Ordering a meal
+        from a Burger King drive-in, Storing a set of possible moves in a chess game etc.
 
 What is an Array?
-Answer:
+Answer: Array is a final class in Java that can be used to declare and store a list of elements. Each element is stored
+        on a particular index and once an Array is defined, the length of that Array cannot be changed.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: An Array is a basic functionality defined by Java, whereas ArrayList is part of the Collections Framework in Java.
+        Therefore array elements are accessed using [], while ArrayList has a set of methods to access elements and modify
+        them. Array is a fixed size data structure, whereas ArrayList is an expandable or mutable type of data structure.
 
 What is a LinkedList?
-Answer:
+Answer: LinkedList is also a part of Collection frameworks and like ArrayList it implements the List Interface, which is
+        why the LinkedList class has all the same methods as of the ArrayList class. But unlike the ArrayList, in which
+        the elements are stored in a contiguous location in the memory, the LinkedList elements are given memory addresses
+        randomly in the memory and are assigned pointers which point to the address of the next element in that list. Each
+        element of a LinkedList, which contains a value and a pointer, is called a Node.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: Array is a collection of elements of a similar data type, in which the values are stored in a contiguous manner
+        on the memory address and the elements of an Array can be accessed using the index they are stored on. Also, once
+        an Array is defined, the length of that array cannot be changed. Whereas, a LinkedList is also a collection of
+        elements of a similar data type, but its elements consists of a value and a pointer which points to the address
+        of the next element. A LinkedList can be expanded or reduced by adding or removing elements from the list.
 
 What is a Queue?
-Answer:
+Answer: Queue is an Interface in Java that extends Collection Interface. Queue is also a collection of Ordered elements,
+        but it performs insert and remove operations differently. With queue, we can insert elements at the end of the
+        list and remove an element from the head/ beginning of the list, hence, using the FIFO principle.
 
 What is a Stack (not Java memory - refers to data structure)?
-Answer:
+Answer: Stack is a class in Java that implements the List Interface, hence Stack is also an integral part of Data Structure.
+        Stack is a Linear data structure that is used to store a collection of objects and uses the LIFO principle. So,
+        elements can be added and removed only at the end of the list by the use of push method(for adding) and poll
+        method (for removing) elements from the end of the list.
 
 What is FIFO and LIFO?
-Answer:
+Answer: FIFO (First-In-Last-Out) and LIFO (Last-In-First-Out), are concepts applied in Data Structures for adding and
+        removing elements from a list. In the FIFO concept, the first element is processed first and the newest element
+        is processed last. Whereas LIFO concept uses push and pop methods to add and remove an element. Push method adds
+        an element at the top of the Stack, and the pop operation removes an element from the top of the stack.
 
 Explain Big O Notation?
-Answer:
+Answer: Big O is a mathematical notation that describes the limiting behaviour of a function when the argument tends toward
+        a particular value or infinity. Big O is a member of a family of Notations invented by Paul Bachmann, Edmund Landau
+        and others, collectively called Bachmann-Landau Notations or asymptotic notations.
+        In java, however, Big O notation is the language we use for talking about how long an algorithm takes to run.
+        It's how we compare the efficiency of different approaches to a problem. Big O basically refers to the runtime of
+        a program.
 
 What is the best case to search an element from an array?
 Answer:
@@ -40,10 +67,16 @@ What is the worst case to search an element from an array?
 Answer:
 
 Describe what a tree data structure is?
-Answer:
+Answer: A tree is a hierarchical data structure (non-linear), which can represent relationships between different nodes.
+        Some of the properties of a tree data structure are as follows:
+        * A tree can contain no nodes or it can contain one special node called the root with zero or more subtrees.
+        * Every edge of the tree is directly or indirectly originated from the root.
+        * Every child has only one parent, but one parent can have many children.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph is a non-linear data structure consisting of nodes and edges. The nodes in graph are also referred to as
+        vertices and the edges are the lines or arcs that connect two nodes in the graph. More formally, a graph can be
+        defined as: A graph consists of finite set of vertices(nodes) and sets of edges that connects a pair of nodes.
 
 What is the difference between the HashTable and HashMap?
 Answer:
