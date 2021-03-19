@@ -61,10 +61,11 @@ Answer: Big O is a mathematical notation that describes the limiting behaviour o
         a program.
 
 What is the best case to search an element from an array?
-Answer:
+Answer: The best case to search an element would be if an array is sorted.
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: The worst case to search an element in an array is when an element is at the last position, or not in the array,
+        therefore we have to traverse over the entire array giving n no of repetitions over loop.
 
 Describe what a tree data structure is?
 Answer: A tree is a hierarchical data structure (non-linear), which can represent relationships between different nodes.
@@ -79,31 +80,63 @@ Answer: A graph is a non-linear data structure consisting of nodes and edges. Th
         defined as: A graph consists of finite set of vertices(nodes) and sets of edges that connects a pair of nodes.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: HashMap is non-synchronized. It is not thread-safe and can't be shared between many threads without proper
+        synchronization code, whereas, Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+        HashMap allows only one null key and multiple null values, whereas a Hashtable doesn't allow any null key or value.
+        HashMap is generally preferred over Hashtable if thread synchornization is not needed.
 
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model
-Answer:
+Answer: For RDBMS, the Array data structures are used.
+        For Network data model, the Graph Data Structures are used.
+        For Hierarchical data model, the Tree Data Structure is used.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: Before talking about HashMaps, lets learn a little about "Hashing". Hashing is a term used to transform a string
+        of characters into a usually shorter-fixed length value or "key", that represents the original string. Hashing is
+        used to index and retrieve items in a database, because it is faster to find the item using the shorter hashed key
+        than to find it using the original long string value.
+        So, HashMaps work on the "Hashing" principle. Which means, HashMaps have elements which are stored in a Key-Value
+        pair. The key and value could be of the same type or of different types depending on the need to access the value.
+        This way HashMaps become useful to access a certain value of an element faster by using the keys to its value.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: This is an Exception thrown to indicate that we are trying to access an array element with an illegal index.
+        This Exception is thrown when an index is either negative, or greater than or equal to the array length.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer: The arrays can be copied to another array by the following methods:
+        1) By iterating over one array and manually assigning the values one by one to another array.
+        2) By using the clone() method, which can simply clone all the values and the size of an array to another array.
+        3) By using the System.arraycopy() method. With this method we can copy from a range of the first array to the
+           range of the second array. System.arraycopy() is faster than clone(), as it used Java Native Interface.
+        4) By using Arrays.copyOf() method, in which we can copy the first few elements or the full array.
+        5) By using the Arrays.copyOfRange() method, which is used to copy a specified range of an array. If the starting
+           index is not 0, then we can use this method to copy a partial array.
 
 What is DFS and BFS?
-Answer:
+Answer: BFS stands for Breadth First Search. It is a "vertex" based technique for finding the shortest path in a graph.
+        It uses a queue data structure which follows FIFO. In BFS, one vertex is selected at a time when it is visited and
+        marked, then its adjacent are visited and stored in the queue. It is slower than DFS
+        DFS stands for Depth First Search. It is a "edge" based technique for finding the shortest path in a graph. It
+        uses the Stack Data Structure which follows LIFO concept. It performs two stages, first, visited vertices are
+        pushed into stack and second, if there are not vertices, then visited vertices are popped (removed).
 
 What is Recursion?
-Answer:
+Answer: Recursion is the technique of calling a method within the same method. This technique provides a way to break
+        complicated problems down into simple problems which are easier to solve. So basically, it means looping inside a
+        method using the same method. In order to perform a Recursive method, it is MUST to declare a condition to break
+        the loop. This is called a "Halting" condition.
 
 What are linear and non-linear data Structures?
-Answer:
+Answer: The Linear and non-linear data structures are the sub-classification of the data structure, which comes under the
+        Non-primitive data structure (Data Structure for Non-Primitive Data types). The crucial difference between them
+        is that the linear data structure arranges the data in a sequential manner or a sequence and follow some sort of
+        order. Whereas, the non-linear data structure arranges the data in a hierarchical manner. Arrays, Queues, Stacks,
+        LinkedList etc are forms of a linear data structures while Trees and Graphs are form of a non-linear data structure.
 
 
 Outline different sorting algorithms and their time complexities:
+
 
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
