@@ -12,25 +12,32 @@ public class UnitTestingMath {
         // Factorial method using Recursion called:
         System.out.println("The factorial for your input using recursion is: " +factorial.recursionFactorial(10));
 
+        System.out.println("***********************************************************************");
         //Object created for the Fibonacci class:
         Fibonacci fibonacci = new Fibonacci();
         // Fibonacci method called:
         System.out.println(fibonacci.fibonacciChallenge(40));
 
+        System.out.println("***********************************************************************");
         //Object created for the FindLowestDifference class:
         FindLowestDifference difference = new FindLowestDifference();
         // lowestDifference method called:
         difference.lowestDifference(); // Answer is 1.
 
+        System.out.println("***********************************************************************");
         // Find the missing number from the array {10, 2, 1, 4, 5, 3, 7, 8, 6}.
         FindMissingNumber.missingNumber(); // Answer is 9.
 
+        System.out.println("***********************************************************************");
         //Find the lowest number from the array {211, 110, 99, 34, 67, 89, 67, 456, 321, 456, 78, 90, 45, 32, 56, 78, 90, 54, 32, 123, 67, 5, 679, 54, 32, 65};
         LowestNumber.lowestNumber(); // Answer is 5.
 
+        System.out.println("***********************************************************************");
         //Found and implemented the PATTERN:
         Pattern.printPattern();
+        System.out.println("***********************************************************************");
 
+        System.out.println("***********************************************************************");
         //Printing prime numbers from 2 to 1,000,000 (with time taken):
         PrimeNumber.printPrimeNums();
     }
