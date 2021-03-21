@@ -8,10 +8,17 @@ public class Fibonacci {
       0,1,1,2,3,5,8,13
      */
 
-    public static void main(String[] args) {
-
-
+    public static int fibonacciChallenge(int length) {
+        int num1 = 0;
+        int num2 = 1;
+        int output = 0;
+        System.out.print(num1 + " " + num2 + " ");
+        for (int i = 3; i < length; i++) {
+            output = num1 + num2;
+            System.out.print(output + " ");
+            num1 = num2;
+            num2 = output;
+        }
+        return output;
     }
-
-
 }

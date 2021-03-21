@@ -7,14 +7,21 @@ import databases.ConnectToSqlDB;
 
 public class LowestNumber {
 
-    public static void main(String[] args) {
+    public static void lowestNumber() {
         /*
          Write a method to find the lowest number from this array.
          */
 
-        int[] array = new int[] {211, 110, 99, 34, 67, 89, 67, 456, 321, 456, 78, 90, 45, 32, 56, 78, 90, 54, 32, 123, 67, 5, 679, 54, 32, 65};
+        int[] array = new int[]{211, 110, 99, 34, 67, 89, 67, 456, 321, 456, 78, 90, 45, 32, 56, 78, 90, 54, 32, 123, 67, 5, 679, 54, 32, 65};
 
+        int lowestNum = array[0];
+
+        for (int j : array) {
+            if (j < lowestNum) {
+                lowestNum = j;
+            }
+        }
+        System.out.println("The lowest number in this array is: " + lowestNum);
 
     }
-
 }
