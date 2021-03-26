@@ -49,7 +49,8 @@ Answer: PATH is an Environment Variable of a Computer System, which is used to l
 
 What is the difference between an Interface and Abstract class?
 Answer: Interfaces are 100% abstract. All the variables and methods declared in an Interface are abstract. Whereas,
-        an Abstract Class may have a non-Abstract method as well.
+        an Abstract Class may have a non-Abstract method as well. Also, an abstract class has to be inherited (extends)
+        by the child class whereas, the Interface has to be implemented (implements) by the child class.
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
 Answer: No, we cannot create objects of either Interface or of Abstract Classes. We need to extend an Abstract class into
@@ -107,7 +108,7 @@ Explain exceptions in java and how to handle them.
 Answer: Exceptions are events that occur during the execution of a program, that disrupts the normal flow of the program
         instructions. When an error occurs within a method,the method creates an "Object", called EXCEPTION and hands it
         over to the runtime system. This Exception object, contains information about the error, including its type and
-        the state of the program when the error occurred. Creating and Exception object handing it to the runtime system
+        the state of the program when the error occurred. Creating an Exception object and handing it to the runtime system
         is called "throwing an exception". The runtime system, searches for a method that contains a block of code, called
         "try-catch block", that can handle the exception. This is also called as an "Exception Handler".
 
